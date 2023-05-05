@@ -23,11 +23,12 @@ const UserMenu = ({ currentUser }: UserMenuProps) => {
   }, []);
 
   const onRent = useCallback(() => {
+    console.log(currentUser);
     if (!currentUser) {
       return loginModal.onOpen();
     }
 
-    rentModal.onOpen;
+    rentModal.onOpen();
   }, [currentUser, loginModal, rentModal]);
   return (
     <div className="relative">
