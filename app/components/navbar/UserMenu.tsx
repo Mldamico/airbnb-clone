@@ -61,11 +61,11 @@ const UserMenu = ({ currentUser }: UserMenuProps) => {
                   label="My trips"
                 />
                 <MenuItem
-                  onClick={() => router.push("/reservations")}
+                  onClick={() => router.push("/favorites")}
                   label="My Favorites"
                 />
                 <MenuItem
-                  onClick={registerModal.onOpen}
+                  onClick={() => router.push("/reservations")}
                   label="My Reservations"
                 />
                 <MenuItem
